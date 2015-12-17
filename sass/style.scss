@@ -22,8 +22,20 @@ img{
 	height: auto;
 }
 
-.white{
-	color: white;
+.wrapper{
+	max-width: 1170px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column{
+	flex-direction: column;
 }
 
 //typography typography typography typography typography typography 
@@ -31,8 +43,9 @@ img{
 h1{
 	text-transform: uppercase;
 	font-weight: 100;
-	font-size: 8rem;
+	font-size: 10.5rem;
 	font-family: $mont;
+	letter-spacing: .4rem;
 }
 
 h3{
@@ -40,6 +53,29 @@ h3{
 	font-weight: 400;
 	font-family: $droid;
 	letter-spacing: .3rem;
+	font-size: 2.6rem;
+}
+
+p{
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+//buttons buttons buttons buttons buttons buttons buttons buttons buttons 
+
+button{
+	background: none;
+	border: solid 2px $cyan;
+	font-family: $opensans;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding: 1.6rem 4rem;
+	letter-spacing: .4rem;
+	.fa{
+		margin-left: 1rem;
+	}
 }
 
 //header header header header header header header header header header
@@ -47,12 +83,18 @@ h3{
 header{
 	background: url(/images/topbanner.jpg) top center no-repeat;
 	background-size: cover;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	padding: 3rem 0;
 	text-align: center;
 	color: white;
+	.wrapper{
+		padding: 25rem 0;
+	}
+	p{
+		width: 80%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	span{
+		color: $cyan;
+	}
 }
