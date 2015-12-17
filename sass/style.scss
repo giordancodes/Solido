@@ -3,10 +3,56 @@
 //variables variables variables variables variables variables variables 
 $opensans: 'Open Sans', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 $mont: 'Montserrat', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+$droid: 'Droid Serif', serif;
 
+$cyan: #4CDDF3;
 
+//custom styles custom styles custom styles custom styles custom styles
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: $opensans;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.white{
+	color: white;
+}
+
+//typography typography typography typography typography typography 
+
+h1{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 8rem;
+	font-family: $mont;
+}
+
+h3{
+	font-style: italic;
+	font-weight: 400;
+	font-family: $droid;
+	letter-spacing: .3rem;
+}
 
 //header header header header header header header header header header
 
 header{
+	background: url(/images/topbanner.jpg) top center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 0;
+	text-align: center;
+	color: white;
 }
