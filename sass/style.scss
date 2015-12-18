@@ -234,11 +234,16 @@ section.about{
 section.add{
 	background: url(/images/topbanner.jpg) center no-repeat;
 	background-size: cover;
-	.imgDiv{
-		img{
-			width: 50%;
-			display: inline-block;
+	.wrapper{
+		.blueUnderline::before{
+			top: -1rem;
 		}
-		
+	}
+	.imgDiv{
+		padding: 3rem 0;
+		.fifty {
+			background: url(/images/screenBackground.png) no-repeat left;
+			height: 28rem;
+		}
 	}
 }
